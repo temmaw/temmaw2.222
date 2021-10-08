@@ -18,3 +18,12 @@ def index():
 
 
 app.run(host='127.0.0.1', debug=True)
+
+
+
+{% for el in a %}
+<div class="container p-2 text-dark rounded bg-light">
+        <h4 class = "text-center">{{ el.zag }}</h4>
+        <p class = "m-1" style='padding-left: 45px;'> {{ el.tex }} </p>
+</div>
+{% endfor %}
